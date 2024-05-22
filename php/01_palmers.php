@@ -2,8 +2,7 @@
 require_once("./src/connect.php");
 
 // Requête SQL pour récupérer tous les utilisateurs dont le nom est Palmer (prénom, nom de famille)
-$sql = "SELECT * FROM users";
-
+$sql = "SELECT * FROM users WHERE last_name = 'Palmer'";
 
 // Préparation de la requête
 $query = $db->prepare($sql);

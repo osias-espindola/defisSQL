@@ -2,7 +2,7 @@
 require_once("./src/connect.php");
 
 // Requête SQL pour récupérer les prénoms et noms de toutes les femmes
-$sql = "";
+$sql = "SELECT * FROM users";
 
 
 // Préparation de la requête
@@ -25,7 +25,7 @@ require_once("./src/close.php");
 </head>
 <body>
     <?php include_once('./components/nav.php') ?>
-    <pre><?= print_r($result) ?></pre>
+    <!-- <pre><?= print_r($result) ?></pre> -->
 
     <div>
         <?php
