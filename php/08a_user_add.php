@@ -3,12 +3,12 @@ require_once("./src/connect.php");
 
 // Requête SQL pour insérer un nouvel utilisateur
 $sql = 
-"INSERT INTO client (id , first_name , last_name , email, gender , birth_date , country)
+"INSERT INTO users ( first_name , last_name , email, gender , birth_date , country)
 VALUES
-(1001,'Rébecca', 'Armand',Rébecca@hotmail.com, 'Saint-Didier-des-Bois', 2000-04-2024),
-('Aimée', 'Hebert', 'Marigny-le-Châtel', 36),
-('Marielle', 'Ribeiro', 'Maillères', 27),
-('Hilaire', 'Savary', 'Conie-Molitard', 58);";
+('Rébecca', 'Armand','Rébecca@hotmail.com', 'Female' ,  '2000-04-24','China'),
+('Aimée'  , 'Hebert','Hebert@hotmail.com', 'Male', '1999-01-20','Brazil'),
+('Marielle', 'Ribeiro','Ribeiro@hotmail.com', 'Male',  '1980-02-01','Peru'),
+('Hilaire', 'Savary','Savary@hotmail.com','Female' ,  '2001-11-10', 'Indonesia');
 
 
 // Préparation de la requête
